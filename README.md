@@ -42,6 +42,7 @@ Copiar código
 # si tienes Python instalado:
 python3 -m http.server 8000
 # luego visita http://localhost:8000 en tu navegador
+```
 📌 Uso del portafolio
 La página de inicio presenta una breve introducción del autor.
 
