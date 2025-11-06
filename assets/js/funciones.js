@@ -16,7 +16,7 @@ function agregarProyecto(titulo, descripcion, imagen, link) {
     listProyectos.push(nuevoProyecto);
 }
 
-let currentIndex = 2;
+let currentIndex = 3;
 let showingAll = false;
 function proyect(){
     agregarProyecto("Proyecto 1", "VA TODA LA DESCRIPCION DEL PROYECTO", "proyecto1.jpg", "index.html");
@@ -33,7 +33,7 @@ function mostrarDatos(hasta){
     proyectosHTML = document.getElementById("listProyectos");
     let html = "";
     for (let proyecto = 0; proyecto < hasta && proyecto < listProyectos.length; proyecto++) {
-        html += '<div class="col-sm-6 mb-3 mb-sm-0 fade-in">'+
+        html += '<div class="col-sm-4 mb-3 mb-sm-0 fade-in">'+
                 '<div id="'+listProyectos[proyecto].titulo+'" class="card mb-3" data-bs-theme="dark" alt="Tarjeta '+listProyectos[proyecto].titulo+'">'+
                     '<div class="card-header">'+
                         '<h2>'+listProyectos[proyecto].titulo+'</h2>'+
@@ -63,7 +63,7 @@ function verMas(index){
     }else{
         document.getElementById("verMas").style.display = "inline";
     }
-    if (currentIndex <= 2) {
+    if (currentIndex <= 3) {
         document.getElementById("verMenos").style.display = "none";
     }
 }
