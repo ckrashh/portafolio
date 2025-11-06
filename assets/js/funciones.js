@@ -67,3 +67,20 @@ function verMas(index){
         document.getElementById("verMenos").style.display = "none";
     }
 }
+
+function descargarCurriculum(){
+  // 1. Crear un elemento de anclaje dinámicamente
+  const enlace = document.createElement('a');
+
+  // 2. Establecer el enlace del archivo
+  enlace.href = "assets/img/CV_Gerald_Carrillo.pdf";
+
+  // 3. Especificar el nombre del archivo para la descarga
+  enlace.download = "CV_Gerald_Carrillo.pdf";
+
+  // 4. Simular un clic para iniciar la descarga
+  enlace.click();
+
+  // 5. (Opcional) Eliminar el enlace si es necesario
+  // enlace.remove();
+}
